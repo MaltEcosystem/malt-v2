@@ -1,0 +1,16 @@
+# Governance
+
+Malt is built with governance in mind but will not launch with a fully realised governance system. That will be introduced later. Malt will, however, launch with a Compound Finance timelock that has the authority to make changes to the protocol. This will be used to protect critical changes like adding new minters and other security critical changes.
+
+The team will control the key that can submit actions to the timelock and after the 3 day waiting period those changes will be executed. This is the middle ground that allows the team to be able to make changes to the system before a full governance system is in place without needing the community to blindly trust the team. If any rogue actions are taken by a team member, like trying to give themselves minting privilege they would need to submit it to the timelock and wait 3 days which gives other team members and the community enough time to react to avoid catastrophe.
+
+## Governance Philosophy
+
+Governance is something we believe strongly in and want to build a system that allows the community to self govern without allowing disproportionate control to be given to any one party.
+
+We see an issue with the way many protocols implement governance in that they have a governance token divorced from the users of the protocol and 1 token equals 1 vote. This allows large players to accumulate voting power in a protocol without them needing to be a participant in that ecosystem at all. This can create a lot of problems and does not cultivate aligning governance decisions with the best interests of the protocol and the community.
+
+Our philosophy on governance is that governing power should be given to those who participate in the ecosystem and therefore to the ones who provide value to the ecosystem. This is why we are focusing on developing a governance system that allows users to lock up their LP in exchange for voting rights.
+
+We have yet to arrive on a satisfactory solution for this and will continue to actively work on it. Any community discussion on this matter will be extremely valuable as we want to settle on a solution that is best for the community.
+

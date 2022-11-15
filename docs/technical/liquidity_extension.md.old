@@ -1,0 +1,20 @@
+# Liquidity Extension
+
+Liquidity extension is Malt’s version of Protocol Controlled Value \(PCV\). It is capital that is directly controlled by the protocol and can be used to actively attempt to bring price back in line with the peg price. It is called liquidity extension as it is actively deployed into the AMM liquidity pool when it is needed thus it can be seen as an extension to the core AMM pool.
+
+The core way in which the liquidity extension is used is during the under-peg arbitrage auctions. The specifics of how it is used will be elaborated on in the [arbitrage auction section](arb_auctions/)
+
+Every PoolStabilizationPod has its own independent liquidity extension. The asset used for liquidity extension in a given pod is dictated by the asset that is tradeable with Malt in the AMM pool attached to the given PoolStabilizationPod.
+
+Eg liquidity extension is in DAI in a Malt/DAI pool but in ETH in a Malt/ETH pool.
+
+Each pod having its own liquidity extension further modularizes the pod from the rest of the protocol and allows it to operate completely independently.
+
+## Liquidity extension ratio
+
+At any given point in time the pod will have some liquidity extension that it controls. The ratio of this vs the amount of TVL in the pool is an important metric that the protocol tracks.
+
+There is a minimum value defined internally \(that will be governance controllable\). This is an amount of capital that the pod has to maintain to the best of its ability. The pod is free to let this ratio grow but it must try to maintain the minimum. For the sake of simplicity this value will be referred to as the “pod reserve ratio”.
+
+This value is defined as 20% initially but can be changed via governance later.
+
